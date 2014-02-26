@@ -1,0 +1,111 @@
+<h3>Map<h3/>
+<div>
+	<div>
+	Prototype
+	//work in progress
+	//Array.map([iterator = Prototype.K[, context]]);
+	http://prototypejs.org/doc/latest/language/Array/prototype/map/index.html
+	</div>
+
+	<div>
+	Jquery
+	$.map(array, function(value, index){
+	})
+	</div>
+
+	<div>
+	IE8+
+	function map(arr, fn) {
+	  var results = []
+	  for (var i = 0; i < arr.length; i++)
+	    results.push(fn(arr[i], i))
+	  return results
+	}
+
+	map(array, function(value, index){
+
+	})
+	</div>
+</div>
+
+<h3>Now</h3>
+<div>
+	<div>
+	Prototype
+	new Date().getTime();
+	</div>
+
+	<div>
+	Jquery
+	$.now();
+	</div>
+
+	<div>
+	IE8+
+	new Date().getTime();
+	</div>
+</div>
+
+<h3>Parse Html</h3>
+<div>
+	<div>
+	Prototype
+	Object.toHTML(object)
+	http://api.prototypejs.org/language/Object/toHTML/
+	</div>
+
+	<div>
+	Jquery
+	$.parseHTML(htmlString)
+	</div>
+
+	<div>
+	IE8+
+	var parseHTML = function(str) {
+	  var el = document.createElement('div')
+	  el.innerHTML = str
+	  return el.children
+	}
+
+	parseHTML(htmlString)
+	</div>
+</div>
+
+<h3>Parse Json</h3>
+<div>
+	<div>
+	Prototype
+	String.evalJSON();
+	http://api.prototypejs.org/language/String/prototype/evalJSON/
+	</div>
+
+	<div>
+	Jquery
+	$.parseJSON(string);
+	</div>
+
+	<div>
+	IE8+
+	JSON.parse(string);
+	</div>
+</div>
+
+<h3>Trim</h3>
+<div>
+	<div>
+	Prototype
+	string.strip();
+	http://prototypejs.org/doc/latest/language/String/prototype/strip/index.html
+	</div>
+
+	<div>
+	Jquery
+	$.trim(string);
+	</div>
+
+	<div>
+	IE8+
+	string.replace(/^\s+|\s+$/g, '');
+	</div>
+</div>
+
